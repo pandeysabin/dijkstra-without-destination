@@ -73,38 +73,3 @@ class Dijkstra {
     return this.distances;
   }
 }
-
-const graph = {
-  eR05DMkp5raWbSCuTf9o26op6OD3: {
-    zeeO9TubtbUWYScBYeiPHMM32K72: 0.0,
-    "3bd4403d-3df6-c0ad-4ff9-2504af9a8f74": 3.0,
-    "b6132fef-963d-002b-4036-47da0b59fe5b": 0.0,
-    "f5119699-5ed1-039f-da84-c6f8f0db76e0": 2.0,
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 9547.0,
-  },
-  zeeO9TubtbUWYScBYeiPHMM32K72: {
-    "3bd4403d-3df6-c0ad-4ff9-2504af9a8f74": 3.0,
-    "b6132fef-963d-002b-4036-47da0b59fe5b": 0.0,
-    "f5119699-5ed1-039f-da84-c6f8f0db76e0": 2.0,
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 9547.0,
-  },
-  "3bd4403d-3df6-c0ad-4ff9-2504af9a8f74": {
-    "b6132fef-963d-002b-4036-47da0b59fe5b": 3.0,
-    "f5119699-5ed1-039f-da84-c6f8f0db76e0": 2.0,
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 9551.0,
-  },
-  "b6132fef-963d-002b-4036-47da0b59fe5b": {
-    "f5119699-5ed1-039f-da84-c6f8f0db76e0": 2.0,
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 9547.0,
-  },
-  "f5119699-5ed1-039f-da84-c6f8f0db76e0": {
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 9549.0,
-  },
-  "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": {
-    "843e8308-da76-bc7f-4ba0-eb8dd4fa5643": 0.0,
-  },
-};
-
-const dijkstra = new Dijkstra(graph, "eR05DMkp5raWbSCuTf9o26op6OD3");
-
-console.log(dijkstra.shortestPath("eR05DMkp5raWbSCuTf9o26op6OD3", graph));
